@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5rf-jl-kS6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Passing Data View Controller-->
+        <scene sceneID="Moj-JN-pVy">
+            <objects>
+                <viewController id="5rf-jl-kS6" customClass="SBPassingDataViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SXZ-zu-kjI"/>
+                        <viewControllerLayoutGuide type="bottom" id="4iO-H0-Tex"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="33g-Ve-2lZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zy9-zz-hL5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cWU-fy-EcE" kind="show" id="1qk-mL-99s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will be passing data from this viewcontroller to the next. The data that we will pass is &quot;Random Data&quot;." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caE-hG-tMy">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="rfF-Hu-BsS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="rfF-Hu-BsS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="rfF-Hu-BsS"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6C-Sz-YyG">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AdE-jG-5GV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AdE-jG-5GV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="AdE-jG-5GV"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="caE-hG-tMy" firstAttribute="top" secondItem="SXZ-zu-kjI" secondAttribute="bottom" constant="136" id="5yO-h5-hSP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="caE-hG-tMy" secondAttribute="trailing" constant="20" id="8hH-mE-O5i"/>
+                            <constraint firstItem="caE-hG-tMy" firstAttribute="leading" secondItem="33g-Ve-2lZ" secondAttribute="leadingMargin" constant="20" id="AxV-8L-Dud"/>
+                            <constraint firstAttribute="centerY" secondItem="Zy9-zz-hL5" secondAttribute="centerY" id="JvC-qV-bkF"/>
+                            <constraint firstAttribute="centerX" secondItem="Zy9-zz-hL5" secondAttribute="centerX" id="Osm-5Z-Le1"/>
+                            <constraint firstItem="J6C-Sz-YyG" firstAttribute="leading" secondItem="33g-Ve-2lZ" secondAttribute="leadingMargin" constant="20" id="VEQ-6U-lr3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J6C-Sz-YyG" secondAttribute="trailing" constant="20" id="ZXe-mj-zGA"/>
+                            <constraint firstItem="J6C-Sz-YyG" firstAttribute="top" secondItem="Zy9-zz-hL5" secondAttribute="bottom" constant="88" id="rjm-xv-ZT1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Zy9-zz-hL5"/>
+                                <exclude reference="caE-hG-tMy"/>
+                                <exclude reference="J6C-Sz-YyG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="VEQ-6U-lr3"/>
+                                <exclude reference="ZXe-mj-zGA"/>
+                                <exclude reference="rjm-xv-ZT1"/>
+                                <exclude reference="5yO-h5-hSP"/>
+                                <exclude reference="8hH-mE-O5i"/>
+                                <exclude reference="AxV-8L-Dud"/>
+                                <exclude reference="JvC-qV-bkF"/>
+                                <exclude reference="Osm-5Z-Le1"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Zy9-zz-hL5"/>
+                                <include reference="caE-hG-tMy"/>
+                                <include reference="J6C-Sz-YyG"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="VEQ-6U-lr3"/>
+                                <include reference="ZXe-mj-zGA"/>
+                                <include reference="rjm-xv-ZT1"/>
+                                <include reference="5yO-h5-hSP"/>
+                                <include reference="8hH-mE-O5i"/>
+                                <include reference="AxV-8L-Dud"/>
+                                <include reference="JvC-qV-bkF"/>
+                                <include reference="Osm-5Z-Le1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblData" destination="J6C-Sz-YyG" id="TZy-0k-50d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LnJ-xK-vaP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.5" y="240"/>
+        </scene>
+        <!--Passing Data To Second View Controller-->
+        <scene sceneID="S6R-mP-cA7">
+            <objects>
+                <viewController id="cWU-fy-EcE" customClass="SBPassingDataToSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJu-Xk-P2B"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y9A-QV-1TS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zfl-qS-29m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxE-sC-1GJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="XxE-sC-1GJ" secondAttribute="centerY" id="0B7-va-scD"/>
+                            <constraint firstAttribute="centerX" secondItem="XxE-sC-1GJ" secondAttribute="centerX" id="5aO-wC-Oxw"/>
+                            <constraint firstItem="XxE-sC-1GJ" firstAttribute="leading" secondItem="zfl-qS-29m" secondAttribute="leadingMargin" constant="20" id="F3n-Gf-BFn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XxE-sC-1GJ" secondAttribute="trailing" constant="20" id="ygk-FZ-1ZR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XxE-sC-1GJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0B7-va-scD"/>
+                                <exclude reference="5aO-wC-Oxw"/>
+                                <exclude reference="F3n-Gf-BFn"/>
+                                <exclude reference="ygk-FZ-1ZR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XxE-sC-1GJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0B7-va-scD"/>
+                                <include reference="5aO-wC-Oxw"/>
+                                <include reference="F3n-Gf-BFn"/>
+                                <include reference="ygk-FZ-1ZR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lblValue" destination="XxE-sC-1GJ" id="47m-Tw-Jvg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Re5-hv-fzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901.5" y="240"/>
+        </scene>
+    </scenes>
+</document>
