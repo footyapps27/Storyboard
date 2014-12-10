@@ -70,32 +70,35 @@
     {
         case kSBPassingData:
         {
-            UIStoryboard *objUIStoryboard = [UIStoryboard storyboardWithName:@"PassingData" bundle:nil];
-            
-            UIViewController *objUIViewController = [objUIStoryboard instantiateInitialViewController];
-            
-            [self.navigationController pushViewController:objUIViewController animated:YES];
+            [self navigateToFirstViewControllerOfStoryBoard:@"PassingData"];
         }
         break;
         case kSBPushingFromTableView:
         {
-            UIStoryboard *objUIStoryboard = [UIStoryboard storyboardWithName:@"PushFromTableView" bundle:nil];
-            
-            UIViewController *objUIViewController = [objUIStoryboard instantiateInitialViewController];
-            
-            [self.navigationController pushViewController:objUIViewController animated:YES];
+            [self navigateToFirstViewControllerOfStoryBoard:@"PushFromTableView"];
         }
             break;
         case kSBCustomCell:
         {
-            UIStoryboard *objUIStoryboard = [UIStoryboard storyboardWithName:@"CustomTableViewCell" bundle:nil];
-            
-            UIViewController *objUIViewController = [objUIStoryboard instantiateInitialViewController];
-            
-            [self.navigationController pushViewController:objUIViewController animated:YES];
+            [self navigateToFirstViewControllerOfStoryBoard:@"CustomTableViewCell"];
         }
             break;
+        case kSBStoryBoardToViewController:
+        {
+            [self navigateToFirstViewControllerOfStoryBoard:@"StoryboardToViewController"];
+        }
+            break;
+        case kSBStoryBoardToAnotherStoryBoard:
+        {
+            [self navigateToFirstViewControllerOfStoryBoard:@"FirstStoryboard"];
+        }
+            break;
+        case kSBActionOnStoryBoard:
+        {
+            [self navigateToFirstViewControllerOfStoryBoard:@"ActionOnStoryboard"];
+        }
             
+            break;
         default:
             break;
     }
@@ -122,6 +125,15 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
+}
+
+- (void)navigateToFirstViewControllerOfStoryBoard:(NSString *)storyboardName
+{
+    UIStoryboard *objUIStoryboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    
+    UIViewController *objUIViewController = [objUIStoryboard instantiateInitialViewController];
+    
+    [self.navigationController pushViewController:objUIViewController animated:YES];
 }
 
 /*************************************************************************************/

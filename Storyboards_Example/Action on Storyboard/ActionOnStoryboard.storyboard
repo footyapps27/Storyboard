@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nQO-rk-xHk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Action On Storyboard View Controller-->
+        <scene sceneID="TAC-vh-b16">
+            <objects>
+                <viewController id="nQO-rk-xHk" customClass="SBActionOnStoryboardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iTu-qE-DBT"/>
+                        <viewControllerLayoutGuide type="bottom" id="uft-2W-W0E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pWa-bb-gcz">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will perform normal IBAction on tap of the button. Thus we can also do this apart from using segues." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3H-X7-Tcl">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p5-Xh-HhR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="292" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="showAlert:" destination="nQO-rk-xHk" eventType="touchUpInside" id="0yf-pV-fYN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="z3H-X7-Tcl" secondAttribute="trailing" constant="20" id="9TY-eJ-j89"/>
+                            <constraint firstItem="z3H-X7-Tcl" firstAttribute="top" secondItem="iTu-qE-DBT" secondAttribute="bottom" constant="79" id="B5H-Wu-jNR"/>
+                            <constraint firstItem="z3H-X7-Tcl" firstAttribute="leading" secondItem="pWa-bb-gcz" secondAttribute="leadingMargin" constant="20" id="Fv8-jy-fvE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="z3H-X7-Tcl"/>
+                                <exclude reference="7p5-Xh-HhR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9TY-eJ-j89"/>
+                                <exclude reference="B5H-Wu-jNR"/>
+                                <exclude reference="Fv8-jy-fvE"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="z3H-X7-Tcl"/>
+                                <include reference="7p5-Xh-HhR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9TY-eJ-j89"/>
+                                <include reference="B5H-Wu-jNR"/>
+                                <include reference="Fv8-jy-fvE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49h-CA-7F5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153.5" y="-113"/>
+        </scene>
+    </scenes>
+</document>

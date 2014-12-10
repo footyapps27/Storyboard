@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hVC-e0-OZD">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Storyboard View Controller-->
+        <scene sceneID="qnh-5y-DBl">
+            <objects>
+                <viewController id="hVC-e0-OZD" customClass="SBFirstStoryboardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n6q-Ef-RNM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ngs-FU-Xl9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1wR-Mp-feY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oj-c3-D89">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="navigateToAnotherStoryBoard:" destination="hVC-e0-OZD" eventType="touchUpInside" id="tlv-vW-8wB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view is a part of &quot;First Storyboard.&quot; On tap of the button, we will navigate to a view present in another storyboard." lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0p-In-0Xx">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="368" width="328" height="145.5"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="8oj-c3-D89" secondAttribute="centerX" id="2hm-IO-CR2"/>
+                            <constraint firstAttribute="centerY" secondItem="8oj-c3-D89" secondAttribute="centerY" id="bCm-jV-g6S"/>
+                            <constraint firstItem="z0p-In-0Xx" firstAttribute="top" secondItem="8oj-c3-D89" secondAttribute="bottom" constant="53" id="cJE-TO-PAj"/>
+                            <constraint firstItem="z0p-In-0Xx" firstAttribute="leading" secondItem="1wR-Mp-feY" secondAttribute="leadingMargin" constant="20" id="sMy-p3-3Dh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z0p-In-0Xx" secondAttribute="trailing" constant="20" id="vJg-GZ-vKj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="8oj-c3-D89"/>
+                                <exclude reference="z0p-In-0Xx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2hm-IO-CR2"/>
+                                <exclude reference="bCm-jV-g6S"/>
+                                <exclude reference="cJE-TO-PAj"/>
+                                <exclude reference="sMy-p3-3Dh"/>
+                                <exclude reference="vJg-GZ-vKj"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="8oj-c3-D89"/>
+                                <include reference="z0p-In-0Xx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2hm-IO-CR2"/>
+                                <include reference="bCm-jV-g6S"/>
+                                <include reference="cJE-TO-PAj"/>
+                                <include reference="sMy-p3-3Dh"/>
+                                <include reference="vJg-GZ-vKj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2t-KZ-pBq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="274"/>
+        </scene>
+    </scenes>
+</document>
