@@ -77,6 +77,24 @@
             [self.navigationController pushViewController:objUIViewController animated:YES];
         }
         break;
+        case kSBPushingFromTableView:
+        {
+            UIStoryboard *objUIStoryboard = [UIStoryboard storyboardWithName:@"PushFromTableView" bundle:nil];
+            
+            UIViewController *objUIViewController = [objUIStoryboard instantiateInitialViewController];
+            
+            [self.navigationController pushViewController:objUIViewController animated:YES];
+        }
+            break;
+        case kSBCustomCell:
+        {
+            UIStoryboard *objUIStoryboard = [UIStoryboard storyboardWithName:@"CustomTableViewCell" bundle:nil];
+            
+            UIViewController *objUIViewController = [objUIStoryboard instantiateInitialViewController];
+            
+            [self.navigationController pushViewController:objUIViewController animated:YES];
+        }
+            break;
             
         default:
             break;

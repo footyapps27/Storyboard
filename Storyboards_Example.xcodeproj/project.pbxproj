@@ -18,6 +18,12 @@
 		8C02AC8D1A376CAD00ADDE59 /* PassingData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C02AC8C1A376CAD00ADDE59 /* PassingData.storyboard */; };
 		8C02AC901A376D1F00ADDE59 /* SBPassingDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C02AC8F1A376D1F00ADDE59 /* SBPassingDataViewController.m */; };
 		8C02AC931A37713000ADDE59 /* SBPassingDataToSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C02AC921A37713000ADDE59 /* SBPassingDataToSecondViewController.m */; };
+		8C68EB8B1A38642200810D68 /* PushFromTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C68EB8A1A38642200810D68 /* PushFromTableView.storyboard */; };
+		8C68EB8E1A38648C00810D68 /* SBPushFromTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C68EB8D1A38648C00810D68 /* SBPushFromTableView.m */; };
+		8C68EB911A3864CB00810D68 /* SBPushFromTableViewSecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C68EB901A3864CB00810D68 /* SBPushFromTableViewSecondVC.m */; };
+		8C68EB951A38697600810D68 /* SBCustomTableViewCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C68EB941A38697600810D68 /* SBCustomTableViewCellVC.m */; };
+		8C68EB971A38699200810D68 /* CustomTableViewCell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C68EB961A38699200810D68 /* CustomTableViewCell.storyboard */; };
+		8C68EB9A1A3869E100810D68 /* SBCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C68EB991A3869E100810D68 /* SBCustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		8C02AC8F1A376D1F00ADDE59 /* SBPassingDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPassingDataViewController.m; sourceTree = "<group>"; };
 		8C02AC911A37713000ADDE59 /* SBPassingDataToSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPassingDataToSecondViewController.h; sourceTree = "<group>"; };
 		8C02AC921A37713000ADDE59 /* SBPassingDataToSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPassingDataToSecondViewController.m; sourceTree = "<group>"; };
+		8C68EB8A1A38642200810D68 /* PushFromTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PushFromTableView.storyboard; sourceTree = "<group>"; };
+		8C68EB8C1A38648C00810D68 /* SBPushFromTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPushFromTableView.h; sourceTree = "<group>"; };
+		8C68EB8D1A38648C00810D68 /* SBPushFromTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPushFromTableView.m; sourceTree = "<group>"; };
+		8C68EB8F1A3864CB00810D68 /* SBPushFromTableViewSecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPushFromTableViewSecondVC.h; sourceTree = "<group>"; };
+		8C68EB901A3864CB00810D68 /* SBPushFromTableViewSecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPushFromTableViewSecondVC.m; sourceTree = "<group>"; };
+		8C68EB931A38697600810D68 /* SBCustomTableViewCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCustomTableViewCellVC.h; sourceTree = "<group>"; };
+		8C68EB941A38697600810D68 /* SBCustomTableViewCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCustomTableViewCellVC.m; sourceTree = "<group>"; };
+		8C68EB961A38699200810D68 /* CustomTableViewCell.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomTableViewCell.storyboard; sourceTree = "<group>"; };
+		8C68EB981A3869E100810D68 /* SBCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCustomCell.h; sourceTree = "<group>"; };
+		8C68EB991A3869E100810D68 /* SBCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,8 @@
 				8C02AC711A375C4900ADDE59 /* Initial Launch View Controller */,
 				8C02AC761A375C6B00ADDE59 /* Passing Data */,
 				8C02AC791A375CD800ADDE59 /* Constants */,
+				8C68EB891A38641100810D68 /* Push From TableView */,
+				8C68EB921A38694100810D68 /* Custom TableView Cell */,
 				8C02AC551A375ACD00ADDE59 /* Images.xcassets */,
 				8C02AC571A375ACD00ADDE59 /* LaunchScreen.xib */,
 				8C02AC481A375ACD00ADDE59 /* Supporting Files */,
@@ -167,6 +185,30 @@
 				8C02AC8A1A375E6600ADDE59 /* SBConstants.m */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		8C68EB891A38641100810D68 /* Push From TableView */ = {
+			isa = PBXGroup;
+			children = (
+				8C68EB8A1A38642200810D68 /* PushFromTableView.storyboard */,
+				8C68EB8C1A38648C00810D68 /* SBPushFromTableView.h */,
+				8C68EB8D1A38648C00810D68 /* SBPushFromTableView.m */,
+				8C68EB8F1A3864CB00810D68 /* SBPushFromTableViewSecondVC.h */,
+				8C68EB901A3864CB00810D68 /* SBPushFromTableViewSecondVC.m */,
+			);
+			path = "Push From TableView";
+			sourceTree = "<group>";
+		};
+		8C68EB921A38694100810D68 /* Custom TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8C68EB961A38699200810D68 /* CustomTableViewCell.storyboard */,
+				8C68EB931A38697600810D68 /* SBCustomTableViewCellVC.h */,
+				8C68EB941A38697600810D68 /* SBCustomTableViewCellVC.m */,
+				8C68EB981A3869E100810D68 /* SBCustomCell.h */,
+				8C68EB991A3869E100810D68 /* SBCustomCell.m */,
+			);
+			path = "Custom TableView Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +293,8 @@
 			files = (
 				8C02AC8D1A376CAD00ADDE59 /* PassingData.storyboard in Resources */,
 				8C02AC591A375ACD00ADDE59 /* LaunchScreen.xib in Resources */,
+				8C68EB8B1A38642200810D68 /* PushFromTableView.storyboard in Resources */,
+				8C68EB971A38699200810D68 /* CustomTableViewCell.storyboard in Resources */,
 				8C02AC781A375C7E00ADDE59 /* SBViewController.xib in Resources */,
 				8C02AC561A375ACD00ADDE59 /* Images.xcassets in Resources */,
 			);
@@ -271,9 +315,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C02AC931A37713000ADDE59 /* SBPassingDataToSecondViewController.m in Sources */,
+				8C68EB911A3864CB00810D68 /* SBPushFromTableViewSecondVC.m in Sources */,
+				8C68EB8E1A38648C00810D68 /* SBPushFromTableView.m in Sources */,
 				8C02AC751A375C4900ADDE59 /* SBViewController.m in Sources */,
 				8C02AC901A376D1F00ADDE59 /* SBPassingDataViewController.m in Sources */,
+				8C68EB9A1A3869E100810D68 /* SBCustomCell.m in Sources */,
 				8C02AC741A375C4900ADDE59 /* AppDelegate.m in Sources */,
+				8C68EB951A38697600810D68 /* SBCustomTableViewCellVC.m in Sources */,
 				8C02AC4B1A375ACD00ADDE59 /* main.m in Sources */,
 				8C02AC8B1A375E6600ADDE59 /* SBConstants.m in Sources */,
 			);
@@ -458,6 +506,7 @@
 				8C02AC6A1A375ACE00ADDE59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C02AC6B1A375ACE00ADDE59 /* Build configuration list for PBXNativeTarget "Storyboards_ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +515,7 @@
 				8C02AC6D1A375ACE00ADDE59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

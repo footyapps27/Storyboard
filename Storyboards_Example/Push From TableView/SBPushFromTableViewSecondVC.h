@@ -1,13 +1,23 @@
-//
-//  SBPushFromTableViewSecondVC.h
-//  Storyboards_Example
-//
-//  Created by Samrat on 12/10/14.
-//  Copyright (c) 2014 footyapps27. All rights reserved.
-//
-
+/*!
+ * @file SBPushFromTableViewSecondVC
+ *
+ * @author SMRT
+ *
+ * @section Description
+ * Launch View Controller
+ *
+ * @section Version 1.0
+ *
+ */
+/*************************************************************************************/
+#pragma mark - Imported Class
+/*************************************************************************************/
 #import <UIKit/UIKit.h>
 
+
+/*************************************************************************************/
+#pragma mark - Interface
+/*************************************************************************************/
 @interface SBPushFromTableViewSecondVC : UIViewController
 
 @end

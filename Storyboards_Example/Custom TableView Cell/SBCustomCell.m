@@ -1,15 +1,27 @@
-//
-//  SBCustomCell.m
-//  Storyboards_Example
-//
-//  Created by Samrat on 12/10/14.
-//  Copyright (c) 2014 footyapps27. All rights reserved.
-//
-
+/*!
+ * @file SBCustomCell
+ *
+ * @author SMRT
+ *
+ * @section Description
+ * Passing data View Controller
+ *
+ * @section Version 1.0
+ *
+ */
+/*************************************************************************************/
+#pragma mark - Imported Class
+/*************************************************************************************/
 #import "SBCustomCell.h"
 
+/*************************************************************************************/
+#pragma mark - Implementation
+/*************************************************************************************/
 @implementation SBCustomCell
 
+/*************************************************************************************/
+#pragma mark - View Lifecycle
+/*************************************************************************************/
 - (void)awakeFromNib {
     // Initialization code
 }
@@ -18,6 +30,15 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+/*************************************************************************************/
+#pragma mark - Actions
+/*************************************************************************************/
+- (IBAction)btnTapped:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Voila" message:@"This action is linked in the custom cell class!!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+    
+    [alert show];
 }
 
 @end
