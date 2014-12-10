@@ -35,6 +35,15 @@
 		8C68EBC21A38878200810D68 /* SBSecondStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C68EBC11A38878200810D68 /* SBSecondStoryboardViewController.m */; };
 		8C68EBC61A388A9500810D68 /* SBActionOnStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C68EBC51A388A9500810D68 /* SBActionOnStoryboardViewController.m */; };
 		8C68EBC81A388AA400810D68 /* ActionOnStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C68EBC71A388AA400810D68 /* ActionOnStoryboard.storyboard */; };
+		8C7B884E1A390320002CE569 /* ManualSegue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B884D1A390320002CE569 /* ManualSegue.storyboard */; };
+		8C7B88511A39034E002CE569 /* SBManualFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B88501A39034E002CE569 /* SBManualFirstViewController.m */; };
+		8C7B88541A390362002CE569 /* SBManualSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B88531A390362002CE569 /* SBManualSecondViewController.m */; };
+		8C7B88581A390887002CE569 /* SBStopSegueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B88571A390887002CE569 /* SBStopSegueViewController.m */; };
+		8C7B885A1A39089C002CE569 /* StopSegueOperation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B88591A39089C002CE569 /* StopSegueOperation.storyboard */; };
+		8C7B885D1A390B30002CE569 /* UnwindingSegue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7B885C1A390B30002CE569 /* UnwindingSegue.storyboard */; };
+		8C7B88601A390B4F002CE569 /* SBUnwindingFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B885F1A390B4F002CE569 /* SBUnwindingFirstViewController.m */; };
+		8C7B88631A390B67002CE569 /* SBUnwindingSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B88621A390B67002CE569 /* SBUnwindingSecondViewController.m */; };
+		8C7B88661A390B78002CE569 /* SBUnwindingThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B88651A390B78002CE569 /* SBUnwindingThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +104,21 @@
 		8C68EBC41A388A9500810D68 /* SBActionOnStoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBActionOnStoryboardViewController.h; sourceTree = "<group>"; };
 		8C68EBC51A388A9500810D68 /* SBActionOnStoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBActionOnStoryboardViewController.m; sourceTree = "<group>"; };
 		8C68EBC71A388AA400810D68 /* ActionOnStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionOnStoryboard.storyboard; sourceTree = "<group>"; };
+		8C7B884D1A390320002CE569 /* ManualSegue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ManualSegue.storyboard; sourceTree = "<group>"; };
+		8C7B884F1A39034E002CE569 /* SBManualFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBManualFirstViewController.h; sourceTree = "<group>"; };
+		8C7B88501A39034E002CE569 /* SBManualFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBManualFirstViewController.m; sourceTree = "<group>"; };
+		8C7B88521A390362002CE569 /* SBManualSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBManualSecondViewController.h; sourceTree = "<group>"; };
+		8C7B88531A390362002CE569 /* SBManualSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBManualSecondViewController.m; sourceTree = "<group>"; };
+		8C7B88561A390887002CE569 /* SBStopSegueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBStopSegueViewController.h; sourceTree = "<group>"; };
+		8C7B88571A390887002CE569 /* SBStopSegueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBStopSegueViewController.m; sourceTree = "<group>"; };
+		8C7B88591A39089C002CE569 /* StopSegueOperation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StopSegueOperation.storyboard; sourceTree = "<group>"; };
+		8C7B885C1A390B30002CE569 /* UnwindingSegue.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UnwindingSegue.storyboard; sourceTree = "<group>"; };
+		8C7B885E1A390B4F002CE569 /* SBUnwindingFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUnwindingFirstViewController.h; sourceTree = "<group>"; };
+		8C7B885F1A390B4F002CE569 /* SBUnwindingFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUnwindingFirstViewController.m; sourceTree = "<group>"; };
+		8C7B88611A390B67002CE569 /* SBUnwindingSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUnwindingSecondViewController.h; sourceTree = "<group>"; };
+		8C7B88621A390B67002CE569 /* SBUnwindingSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUnwindingSecondViewController.m; sourceTree = "<group>"; };
+		8C7B88641A390B78002CE569 /* SBUnwindingThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBUnwindingThirdViewController.h; sourceTree = "<group>"; };
+		8C7B88651A390B78002CE569 /* SBUnwindingThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBUnwindingThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +169,9 @@
 				8C68EB9B1A387B3400810D68 /* Storyboard to VC */,
 				8C68EBC31A388A7500810D68 /* Action on Storyboard */,
 				8C68EBB81A38870700810D68 /* Storyboard to Storyboard */,
+				8C7B884C1A390303002CE569 /* Manual Segue With PerformSegue */,
+				8C7B88551A390735002CE569 /* StopSegueOperation */,
+				8C7B885B1A390B21002CE569 /* Unwinding Segue */,
 				8C02AC551A375ACD00ADDE59 /* Images.xcassets */,
 				8C02AC571A375ACD00ADDE59 /* LaunchScreen.xib */,
 				8C02AC481A375ACD00ADDE59 /* Supporting Files */,
@@ -280,6 +307,42 @@
 			path = "Action on Storyboard";
 			sourceTree = "<group>";
 		};
+		8C7B884C1A390303002CE569 /* Manual Segue With PerformSegue */ = {
+			isa = PBXGroup;
+			children = (
+				8C7B884D1A390320002CE569 /* ManualSegue.storyboard */,
+				8C7B884F1A39034E002CE569 /* SBManualFirstViewController.h */,
+				8C7B88501A39034E002CE569 /* SBManualFirstViewController.m */,
+				8C7B88521A390362002CE569 /* SBManualSecondViewController.h */,
+				8C7B88531A390362002CE569 /* SBManualSecondViewController.m */,
+			);
+			path = "Manual Segue With PerformSegue";
+			sourceTree = "<group>";
+		};
+		8C7B88551A390735002CE569 /* StopSegueOperation */ = {
+			isa = PBXGroup;
+			children = (
+				8C7B88591A39089C002CE569 /* StopSegueOperation.storyboard */,
+				8C7B88561A390887002CE569 /* SBStopSegueViewController.h */,
+				8C7B88571A390887002CE569 /* SBStopSegueViewController.m */,
+			);
+			path = StopSegueOperation;
+			sourceTree = "<group>";
+		};
+		8C7B885B1A390B21002CE569 /* Unwinding Segue */ = {
+			isa = PBXGroup;
+			children = (
+				8C7B885C1A390B30002CE569 /* UnwindingSegue.storyboard */,
+				8C7B885E1A390B4F002CE569 /* SBUnwindingFirstViewController.h */,
+				8C7B885F1A390B4F002CE569 /* SBUnwindingFirstViewController.m */,
+				8C7B88611A390B67002CE569 /* SBUnwindingSecondViewController.h */,
+				8C7B88621A390B67002CE569 /* SBUnwindingSecondViewController.m */,
+				8C7B88641A390B78002CE569 /* SBUnwindingThirdViewController.h */,
+				8C7B88651A390B78002CE569 /* SBUnwindingThirdViewController.m */,
+			);
+			path = "Unwinding Segue";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,8 +427,11 @@
 				8C02AC591A375ACD00ADDE59 /* LaunchScreen.xib in Resources */,
 				8C68EB8B1A38642200810D68 /* PushFromTableView.storyboard in Resources */,
 				8C68EBC81A388AA400810D68 /* ActionOnStoryboard.storyboard in Resources */,
+				8C7B884E1A390320002CE569 /* ManualSegue.storyboard in Resources */,
+				8C7B885A1A39089C002CE569 /* StopSegueOperation.storyboard in Resources */,
 				8C68EBA81A38801900810D68 /* SBSecondViewController.xib in Resources */,
 				8C68EB971A38699200810D68 /* CustomTableViewCell.storyboard in Resources */,
+				8C7B885D1A390B30002CE569 /* UnwindingSegue.storyboard in Resources */,
 				8C02AC781A375C7E00ADDE59 /* SBViewController.xib in Resources */,
 				8C68EBBA1A38871A00810D68 /* FirstStoryboard.storyboard in Resources */,
 				8C68EBBC1A38872600810D68 /* SecondStoryboard.storyboard in Resources */,
@@ -388,21 +454,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7B88601A390B4F002CE569 /* SBUnwindingFirstViewController.m in Sources */,
 				8C02AC931A37713000ADDE59 /* SBPassingDataToSecondViewController.m in Sources */,
 				8C68EB911A3864CB00810D68 /* SBPushFromTableViewSecondVC.m in Sources */,
 				8C68EB8E1A38648C00810D68 /* SBPushFromTableView.m in Sources */,
 				8C02AC751A375C4900ADDE59 /* SBViewController.m in Sources */,
+				8C7B88511A39034E002CE569 /* SBManualFirstViewController.m in Sources */,
 				8C68EBBF1A38875A00810D68 /* SBFirstStoryboardViewController.m in Sources */,
 				8C02AC901A376D1F00ADDE59 /* SBPassingDataViewController.m in Sources */,
+				8C7B88541A390362002CE569 /* SBManualSecondViewController.m in Sources */,
 				8C68EB9A1A3869E100810D68 /* SBCustomCell.m in Sources */,
 				8C68EBC61A388A9500810D68 /* SBActionOnStoryboardViewController.m in Sources */,
 				8C02AC741A375C4900ADDE59 /* AppDelegate.m in Sources */,
 				8C68EBA01A387B8500810D68 /* SBStoryboardToVC.m in Sources */,
 				8C68EBA61A387BD200810D68 /* SBThirdViewController.m in Sources */,
 				8C68EB951A38697600810D68 /* SBCustomTableViewCellVC.m in Sources */,
+				8C7B88581A390887002CE569 /* SBStopSegueViewController.m in Sources */,
 				8C68EBC21A38878200810D68 /* SBSecondStoryboardViewController.m in Sources */,
 				8C02AC4B1A375ACD00ADDE59 /* main.m in Sources */,
+				8C7B88661A390B78002CE569 /* SBUnwindingThirdViewController.m in Sources */,
 				8C02AC8B1A375E6600ADDE59 /* SBConstants.m in Sources */,
+				8C7B88631A390B67002CE569 /* SBUnwindingSecondViewController.m in Sources */,
 				8C68EBA31A387BB100810D68 /* SBSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

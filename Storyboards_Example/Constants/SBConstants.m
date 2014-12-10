@@ -27,7 +27,6 @@ NSString *const STR_SB_TO_VIEW_CONTROLLER        =              @"SB to View con
 NSString *const STR_SB_TO_SB                     =              @"SB to SB";
 NSString *const STR_ACTION_ON_SB                 =              @"Action on SB";
 NSString *const STR_MANUAL_SEGUE                 =              @"Manual Segue";
-NSString *const STR_PERFORM_SEGUE                =              @"Perform Segue With Identifier";
 NSString *const STR_UNWINDING_SEGUE              =              @"Unwinding Segue";
 NSString *const STR_STOP_SEGUE_OPERATION         =              @"Stop Segue Operation";
 NSString *const STR_CUSTOM_SEGUE                 =              @"Custom Segue Operation";

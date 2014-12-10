@@ -27,7 +27,6 @@ extern NSString *const STR_SB_TO_VIEW_CONTROLLER;
 extern NSString *const STR_SB_TO_SB;
 extern NSString *const STR_ACTION_ON_SB;
 extern NSString *const STR_MANUAL_SEGUE;
-extern NSString *const STR_PERFORM_SEGUE;
 extern NSString *const STR_UNWINDING_SEGUE;
 extern NSString *const STR_STOP_SEGUE_OPERATION;
 extern NSString *const STR_CUSTOM_SEGUE;

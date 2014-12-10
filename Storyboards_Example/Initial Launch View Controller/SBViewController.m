@@ -48,7 +48,6 @@
                        STR_SB_TO_SB,
                        STR_ACTION_ON_SB,
                        STR_MANUAL_SEGUE,
-                       STR_PERFORM_SEGUE,
                        STR_UNWINDING_SEGUE,
                        STR_STOP_SEGUE_OPERATION,
                        STR_CUSTOM_SEGUE,
@@ -97,7 +96,21 @@
         {
             [self navigateToFirstViewControllerOfStoryBoard:@"ActionOnStoryboard"];
         }
-            
+            break;
+        case kSBManualSegue:
+        {
+            [self navigateToFirstViewControllerOfStoryBoard:@"ManualSegue"];
+        }
+            break;
+        case kSBUnwindingSegue:
+        {
+            [self navigateToFirstViewControllerOfStoryBoard:@"UnwindingSegue"];
+        }
+            break;
+        case kSBStopSegueOperation:
+        {
+            [self navigateToFirstViewControllerOfStoryBoard:@"StopSegueOperation"];
+        }
             break;
         default:
             break;

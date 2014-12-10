@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QQF-kw-1z8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Unwinding First View Controller-->
+        <scene sceneID="RjZ-B9-Y2A">
+            <objects>
+                <viewController id="QQF-kw-1z8" customClass="SBUnwindingFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0bm-Xw-kvz"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Ne-U9-DlS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GVI-eH-aJd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydD-TR-VNI">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <string key="text">Here we will be using the unwinding segue. We will push to four views &amp; from there we will navigate to either screen. Move to the last screen by tapping the buttons.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-i5-8jd">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <string key="text">Each view controller to enable unwinding needs to implement "unwindTo:" kind of method. This will then be linked in the next VC. We can also detect in this method which VC the unwinding has taken place from.
+
+The unwinding segues can also be triggered programmatially similar to normal segues - "using identifier" &amp; manula segues.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="327" width="328" height="234.5"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAZ-s6-KwR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="OgX-9q-OoS" kind="show" id="aHD-Tr-cJr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="KAZ-s6-KwR" secondAttribute="centerX" id="0Lb-zx-912"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ydD-TR-VNI" secondAttribute="trailing" constant="20" id="C9s-Yy-Djn"/>
+                            <constraint firstItem="ydD-TR-VNI" firstAttribute="top" secondItem="0bm-Xw-kvz" secondAttribute="bottom" constant="114" id="mqb-VL-5WS"/>
+                            <constraint firstAttribute="centerY" secondItem="KAZ-s6-KwR" secondAttribute="centerY" id="qNE-xs-jlK"/>
+                            <constraint firstItem="ydD-TR-VNI" firstAttribute="leading" secondItem="GVI-eH-aJd" secondAttribute="leadingMargin" constant="20" id="xrN-yX-WEb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ydD-TR-VNI"/>
+                                <exclude reference="hgP-i5-8jd"/>
+                                <exclude reference="KAZ-s6-KwR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="C9s-Yy-Djn"/>
+                                <exclude reference="mqb-VL-5WS"/>
+                                <exclude reference="xrN-yX-WEb"/>
+                                <exclude reference="0Lb-zx-912"/>
+                                <exclude reference="qNE-xs-jlK"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ydD-TR-VNI"/>
+                                <include reference="hgP-i5-8jd"/>
+                                <include reference="KAZ-s6-KwR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="C9s-Yy-Djn"/>
+                                <include reference="mqb-VL-5WS"/>
+                                <include reference="xrN-yX-WEb"/>
+                                <include reference="0Lb-zx-912"/>
+                                <include reference="qNE-xs-jlK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZy-IE-bF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1170" y="289"/>
+        </scene>
+        <!--Unwinding Second View Controller-->
+        <scene sceneID="usz-U8-bRP">
+            <objects>
+                <viewController id="OgX-9q-OoS" customClass="SBUnwindingSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nrX-PI-5jP"/>
+                        <viewControllerLayoutGuide type="bottom" id="k8z-W2-zzj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CLq-er-KEZ">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Move to the next screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXe-5W-o6w">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="244" width="186" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA0-pk-KZY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="285" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="KvK-8i-cAw" kind="show" id="tJe-AD-0Pi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRe-iP-JSF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Unwind to Red View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="392" width="139" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="dz0-kQ-qId" kind="unwind" unwindAction="unwindToRed:" id="EB7-BU-NKN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LK-SE-5Va">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <string key="text">We can also pass data to the unwinded VC since we can directly access the VC from where we are unwinding. Thus we can directly read the properties.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="437" width="328" height="101.5"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The unwind to red button is connected to the &quot;exit&quot; option on top of the view controller in the storyboard." lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hen-MN-6is">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="57" width="328" height="101.5"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZXe-5W-o6w"/>
+                                <exclude reference="vA0-pk-KZY"/>
+                                <exclude reference="gRe-iP-JSF"/>
+                                <exclude reference="5LK-SE-5Va"/>
+                                <exclude reference="hen-MN-6is"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZXe-5W-o6w"/>
+                                <include reference="vA0-pk-KZY"/>
+                                <include reference="gRe-iP-JSF"/>
+                                <include reference="5LK-SE-5Va"/>
+                                <include reference="hen-MN-6is"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LX1-pY-gzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dz0-kQ-qId" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-363" y="289"/>
+        </scene>
+        <!--Unwinding Third View Controller-->
+        <scene sceneID="9DA-QO-p24">
+            <objects>
+                <viewController id="KvK-8i-cAw" customClass="SBUnwindingThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2uT-gu-vXk"/>
+                        <viewControllerLayoutGuide type="bottom" id="rrT-fq-8uO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="swP-TJ-AXp">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk7-Rv-W2U">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UFW-io-Uyt" kind="show" id="3dV-Rb-GNL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbR-hl-JPY">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Unwind to Green View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="390" width="153" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="aE6-N8-I91" kind="unwind" unwindAction="unwindToGreen:" id="mOO-Bd-P9D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngp-My-VMd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Unwind to Red View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="428" width="139" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="aE6-N8-I91" kind="unwind" unwindAction="unwindToRed:" id="zeJ-8l-aD3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Move to the final screen. We will then use the unwinding segue." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1t-Eh-gTF">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="161" width="328" height="41"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d1t-Eh-gTF" firstAttribute="leading" secondItem="swP-TJ-AXp" secondAttribute="leadingMargin" constant="20" id="5ac-a5-7Xn"/>
+                            <constraint firstAttribute="centerY" secondItem="hk7-Rv-W2U" secondAttribute="centerY" id="L5t-Bb-0dU"/>
+                            <constraint firstAttribute="centerX" secondItem="hk7-Rv-W2U" secondAttribute="centerX" id="Rh8-pt-2fy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d1t-Eh-gTF" secondAttribute="trailing" constant="20" id="bkF-9R-xet"/>
+                            <constraint firstItem="d1t-Eh-gTF" firstAttribute="top" secondItem="2uT-gu-vXk" secondAttribute="bottom" constant="142" id="tOl-W4-Tga"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hk7-Rv-W2U"/>
+                                <exclude reference="VbR-hl-JPY"/>
+                                <exclude reference="ngp-My-VMd"/>
+                                <exclude reference="d1t-Eh-gTF"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5ac-a5-7Xn"/>
+                                <exclude reference="bkF-9R-xet"/>
+                                <exclude reference="tOl-W4-Tga"/>
+                                <exclude reference="L5t-Bb-0dU"/>
+                                <exclude reference="Rh8-pt-2fy"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hk7-Rv-W2U"/>
+                                <include reference="VbR-hl-JPY"/>
+                                <include reference="ngp-My-VMd"/>
+                                <include reference="d1t-Eh-gTF"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5ac-a5-7Xn"/>
+                                <include reference="bkF-9R-xet"/>
+                                <include reference="tOl-W4-Tga"/>
+                                <include reference="L5t-Bb-0dU"/>
+                                <include reference="Rh8-pt-2fy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rb9-mP-xzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aE6-N8-I91" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="289"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P2c-wZ-Kmd">
+            <objects>
+                <viewController id="UFW-io-Uyt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Da8-B0-HAu"/>
+                        <viewControllerLayoutGuide type="bottom" id="gha-Sv-y6k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gkj-st-AFY">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpW-Lz-5wl">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Unwind to Yellow View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="123" y="123" width="155" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="h04-Qa-u5S" kind="unwind" unwindAction="unwindToYellow:" id="NFz-E4-llf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iE8-Rm-D4U">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Unwind to Green View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="194" width="153" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="h04-Qa-u5S" kind="unwind" unwindAction="unwindToGreen:" id="gM5-MS-pZG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNf-ot-LOn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Unwind to Red View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="277" width="139" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="h04-Qa-u5S" kind="unwind" unwindAction="unwindToRed:" id="uee-Xg-SOZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bpW-Lz-5wl"/>
+                                <exclude reference="iE8-Rm-D4U"/>
+                                <exclude reference="fNf-ot-LOn"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bpW-Lz-5wl"/>
+                                <include reference="iE8-Rm-D4U"/>
+                                <include reference="fNf-ot-LOn"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2p-nI-rYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="h04-Qa-u5S" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1353" y="289"/>
+        </scene>
+    </scenes>
+</document>

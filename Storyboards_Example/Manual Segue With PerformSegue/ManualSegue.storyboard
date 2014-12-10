@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DHn-h2-Z38">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Manual First View Controller-->
+        <scene sceneID="gUz-Zr-Rfe">
+            <objects>
+                <viewController id="DHn-h2-Z38" customClass="SBManualFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DJH-MS-Bd4"/>
+                        <viewControllerLayoutGuide type="bottom" id="mnC-H1-FfV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mzj-RG-uTh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZe-iZ-P37">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <string key="text">This view will push to the next view in 10 seconds. This transition is being done using "manual segues". i.e, without any action we are triggering the segue using "performSegue" method.
+To accomplih this, we need to drag &amp; drop from the view controller(on top) to the next one, instead of a button.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VZe-iZ-P37" firstAttribute="top" secondItem="DJH-MS-Bd4" secondAttribute="bottom" constant="140" id="NZQ-hE-duS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VZe-iZ-P37" secondAttribute="trailing" constant="20" id="UVQ-Q7-brj"/>
+                            <constraint firstItem="VZe-iZ-P37" firstAttribute="leading" secondItem="mzj-RG-uTh" secondAttribute="leadingMargin" constant="20" id="YKl-m0-fwZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VZe-iZ-P37"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="NZQ-hE-duS"/>
+                                <exclude reference="UVQ-Q7-brj"/>
+                                <exclude reference="YKl-m0-fwZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VZe-iZ-P37"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="NZQ-hE-duS"/>
+                                <include reference="UVQ-Q7-brj"/>
+                                <include reference="YKl-m0-fwZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <segue destination="zMX-BT-SEy" kind="show" identifier="ManualSegue" id="tvC-Uw-xv5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vg-YY-LK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.5" y="400"/>
+        </scene>
+        <!--Manual Second View Controller-->
+        <scene sceneID="hDN-nF-7mi">
+            <objects>
+                <viewController id="zMX-BT-SEy" customClass="SBManualSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5mV-XL-TaH"/>
+                        <viewControllerLayoutGuide type="bottom" id="WYQ-MC-a1b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QjP-O7-zCq">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen traversed successfully using &quot;Manual Segues&quot;. The segue identifier was &quot;ManualSegue&quot;." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGY-dH-3TR">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="CGY-dH-3TR" secondAttribute="centerY" id="ZAo-cg-MZd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CGY-dH-3TR" secondAttribute="trailing" constant="20" id="bje-qi-zAK"/>
+                            <constraint firstItem="CGY-dH-3TR" firstAttribute="leading" secondItem="QjP-O7-zCq" secondAttribute="leadingMargin" constant="20" id="nmQ-f3-mis"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="CGY-dH-3TR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ZAo-cg-MZd"/>
+                                <exclude reference="bje-qi-zAK"/>
+                                <exclude reference="nmQ-f3-mis"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="CGY-dH-3TR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ZAo-cg-MZd"/>
+                                <include reference="bje-qi-zAK"/>
+                                <include reference="nmQ-f3-mis"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23C-Bl-w9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045.5" y="400"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vlf-uw-wQ1">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stop Segue View Controller-->
+        <scene sceneID="aVW-gZ-Y1D">
+            <objects>
+                <viewController id="vlf-uw-wQ1" customClass="SBStopSegueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NJ0-BI-mXj"/>
+                        <viewControllerLayoutGuide type="bottom" id="pcy-w8-BDU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R31-GU-4Fl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6h-oX-zJD">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <string key="text">This view has a button which will trigger a segue which should take us to the next view. However, we have implemented "shouldPerformSegue" delegate &amp; set it to NO. Thus this segue will not trigger, even though it is mapped.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poq-Or-xiQ">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="144" y="386" width="79" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="aiZ-8F-2fz" kind="show" id="jhy-eG-ZDd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="w6h-oX-zJD" secondAttribute="trailing" constant="20" id="6ij-Cn-gEj"/>
+                            <constraint firstItem="w6h-oX-zJD" firstAttribute="leading" secondItem="R31-GU-4Fl" secondAttribute="leadingMargin" constant="20" id="UIv-8I-9EH"/>
+                            <constraint firstItem="w6h-oX-zJD" firstAttribute="top" secondItem="NJ0-BI-mXj" secondAttribute="bottom" constant="147" id="a7h-cd-50G"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="w6h-oX-zJD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6ij-Cn-gEj"/>
+                                <exclude reference="UIv-8I-9EH"/>
+                                <exclude reference="a7h-cd-50G"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="w6h-oX-zJD"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6ij-Cn-gEj"/>
+                                <include reference="UIv-8I-9EH"/>
+                                <include reference="a7h-cd-50G"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fjH-To-XVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="424"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oor-JF-7kC">
+            <objects>
+                <viewController id="aiZ-8F-2fz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l0e-So-xne"/>
+                        <viewControllerLayoutGuide type="bottom" id="PQ3-XK-QI8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="44G-1V-XPr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NA7-uR-od3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="424"/>
+        </scene>
+    </scenes>
+</document>
