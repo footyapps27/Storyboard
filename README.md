@@ -10,7 +10,7 @@ Steps: <br>
 	a. Create a segue from first view controller to the next in the storyboard.<br>
 	b. Give the controllers the respective controller names.<br>
 	c. If required, you can also give the segue 'identifier' name in the storyboard.<br>
-	d. - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender<br>
+	d. - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 	{
 		if([segue.destinationViewController isKindOfClass:[SBPassingDataToSecondViewController class]])
     	{
