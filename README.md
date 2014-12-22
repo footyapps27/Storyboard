@@ -10,15 +10,15 @@ Steps: <br>
 	a. Create a segue from first view controller to the next in the storyboard.<br>
 	b. Give the controllers the respective controller names.<br>
 	c. If required, you can also give the segue 'identifier' name in the storyboard.<br>
-	```- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-	{
+	    - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+	    {
 		if([segue.destinationViewController isKindOfClass:[SBPassingDataToSecondViewController class]])
     		{
         		SBPassingDataToSecondViewController *objSBPassingDataToSecondViewController = segue.destinationViewController;
         		objSBPassingDataToSecondViewController.strValue = @"Passed from first VC";
         		objSBPassingDataToSecondViewController.delegate = self;
     		}
-	}```
+	    }
 	
 
 2. Pushing from table view controller using storyboards
