@@ -112,6 +112,12 @@
             [self navigateToFirstViewControllerOfStoryBoard:@"StopSegueOperation"];
         }
             break;
+        case kSBCustomSegue:
+        {
+            [self navigateToFirstViewControllerOfStoryBoard:@"CustomSegue"];
+        }
+            break;
+            
         default:
             break;
     }

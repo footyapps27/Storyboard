@@ -113,20 +113,24 @@ Steps:<br>
 
 Steps:<br>
 	a. Segues can also be triggered by code using the following command:<br>
-		[self performSegueWithIdentifier:@"ManualSegue" sender:nil];
+	    
+	    [self performSegueWithIdentifier:@"ManualSegue" sender:nil];
+	    
 	b. It is important to declare the identifier of the segue.<br>
 
 8. Unwinding segue
 ====================
 
-Steps:
+Steps:<br>
     a. Unwinding Segue is similar to popping from a navigation controller. We navigate back to a view controller that is in the stack.<br>
     b. For a view controller to allow other view controller to unwind to it, it needs to implement the following method(method name can be different):<br>
+        
         - (IBAction)unwindToRed:(UIStoryboardSegue *)unwindSegue
-        {
+	    {
             /* Here we can access from which VC this object has arrived. */
             NSLog(@"The source view controller from where this unwinding method was called = %@", [unwindSegue destinationViewController]);
-        }	
+        }
+        	
     c. Once this method is implemented, then go to the view controller from which you want to unwind to.
     d. Ctrl + Drag from the button to the "Exit" icon on top of the view controller, & connect it to the method.
 
@@ -136,11 +140,13 @@ Steps:
 
 Steps:<br>
 	a. Segue operation can be stopped by implementing the following delegate:<br>
-		- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+	    
+	    - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 		{
     		/* Explicitly done to stop the segue from taking place. */
     		return NO;
 		}
+		
 	b. Depending on the identifier we can also create filters as to which segue we want to perform.<br>
 
 10. Custom segue operation
