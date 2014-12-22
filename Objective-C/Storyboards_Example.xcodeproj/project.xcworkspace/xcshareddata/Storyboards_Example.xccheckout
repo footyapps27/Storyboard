@@ -14,11 +14,11 @@
 		<string>https://github.com/footyapps27/Storyboard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Storyboards_Example.xcodeproj</string>
+	<string>Objective-C/Storyboards_Example.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9540AA090CCA7C60DC44205B5FA94F7DBE58E333</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/footyapps27/Storyboard.git</string>
