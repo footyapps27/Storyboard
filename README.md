@@ -10,7 +10,8 @@ Steps: <br>
 	a. Create a segue from first view controller to the next in the storyboard.<br>
 	b. Give the controllers the respective controller names.<br>
 	c. If required, you can also give the segue 'identifier' name in the storyboard.<br>
-	    - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+	    
+        - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 	    {
 		if([segue.destinationViewController isKindOfClass:[SBPassingDataToSecondViewController class]])
     		{
@@ -118,11 +119,17 @@ Steps:<br>
 8. Unwinding segue
 ====================
 
-Steps:<br>
-	a. Unwinding Segue is similar to popping from a navigation controller. We navigate back to a view controller that is in the stack.<br>
-	b. For a <br>
-	c. 
-	
+Steps:
+    a. Unwinding Segue is similar to popping from a navigation controller. We navigate back to a view controller that is in the stack.<br>
+    b. For a view controller to allow other view controller to unwind to it, it needs to implement the following method(method name can be different):<br>
+        - (IBAction)unwindToRed:(UIStoryboardSegue *)unwindSegue
+        {
+            /* Here we can access from which VC this object has arrived. */
+            NSLog(@"The source view controller from where this unwinding method was called = %@", [unwindSegue destinationViewController]);
+        }	
+    c. Once this method is implemented, then go to the view controller from which you want to unwind to.
+    d. Ctrl + Drag from the button to the "Exit" icon on top of the view controller, & connect it to the method.
+
 	
 9. Stop segue operation
 ========================
