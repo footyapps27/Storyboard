@@ -7,9 +7,9 @@ Complete functionality of Storyboard displayed in an app.
 ====================================
 
 Steps: <br>
-	a. Create a segue from first view controller to the next in the storyboard.<br>
-	b. Give the controllers the respective controller names.<br>
-	c. If required, you can also give the segue 'identifier' name in the storyboard.<br>
+a. Create a segue from first view controller to the next in the storyboard.<br>
+b. Give the controllers the respective controller names.<br>
+c. If required, you can also give the segue 'identifier' name in the storyboard.<br>
 	    
         - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 	    {
@@ -26,10 +26,11 @@ Steps: <br>
 =======================================================
 
 Steps: <br>
-	a. Create a segue from first view controller to the next in the storyboard. This time you need to drag from the prototype cell to the next view controller.<br>
-	b. Give the controllers the respective controller names.<br>
-	c. Give the prototype cell an identifier name. e.g 'Default Cell'<br>
-	d. Implement the tableview delegate<br>
+a. Create a segue from first view controller to the next in the storyboard. This time you need to drag from the prototype cell to the next view controller.<br>
+b. Give the controllers the respective controller names.<br>
+c. Give the prototype cell an identifier name. e.g 'Default Cell'<br>
+d. Implement the tableview delegate<br>
+		
 		- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 		{
     		return 1;
@@ -50,11 +51,12 @@ Steps: <br>
 ============================================
 
 Steps: <br>
-	a. Create a UITableViewCell class.<br>
-	b. In the storyboard, map this class to the cell's class(identity inspector).<br>
-	c. Customize the cell(row height, content by adding buttons & their actions). Make sure the content is inside the "Content View" of the table view cell.<br>
-	d. Implement the actions of the content in the table view cell class.<br>
-	e. Implement the table view delegate<br>
+a. Create a UITableViewCell class.<br>
+b. In the storyboard, map this class to the cell's class(identity inspector).<br>
+c. Customize the cell(row height, content by adding buttons & their actions). Make sure the content is inside the "Content View" of the table view cell.<br>
+d. Implement the actions of the content in the table view cell class.<br>
+e. Implement the table view delegate<br>
+		
 		- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 		{
     		SBCustomCell *objSBCustomCell = [tableView dequeueReusableCellWithIdentifier:@"CustomCell" forIndexPath:indexPath];
@@ -70,14 +72,14 @@ Steps: <br>
 
 Steps: <br>
 From storyboard to xib.<br>
-	a. Create a storyboard.<br>
-	b. Add a new view controller(say view controller A) to the storyboard. This is view controller which will have its own xib.<br>
-	c. Create a new class(VC A) which has xib mapped to it.<br>
-	d. In the soryboard, map the class VC A to the view controller. However it is important to delete the view of the view controller in the storyboard.<br>
-	e. Now we can attach segues to this view controller & navigate. When this view controller is loaded, it will take the view from the xib that is attached to the view controller.<br>
+a. Create a storyboard.<br>
+b. Add a new view controller(say view controller A) to the storyboard. This is view controller which will have its own xib.<br>
+c. Create a new class(VC A) which has xib mapped to it.<br>
+d. In the soryboard, map the class VC A to the view controller. However it is important to delete the view of the view controller in the storyboard.<br>
+e. Now we can attach segues to this view controller & navigate. When this view controller is loaded, it will take the view from the xib that is attached to the view controller.<br>
 
 From xib to storyboard.<br>
-	a. When navigating from a view controller to storyboard, we need to use the below code snippet:<br>
+a. When navigating from a view controller to storyboard, we need to use the below code snippet:<br>
 	
 	UIStoryboard *objUIStoryboard = [UIStoryboard storyboardWithName:@"StoryboardToViewController" bundle:nil];
     
@@ -90,9 +92,9 @@ From xib to storyboard.<br>
 ========================================================
 
 Steps: <br>
-	a. For navigating between storyboards, we need to use the same mechanism of navigation between xib to storyboard.<br>
-	b. We need to map an action to the storyboard.<br>
-	c. On tap of this action, we will instantiate the storyboard & navigate to it.<br>
+a. For navigating between storyboards, we need to use the same mechanism of navigation between xib to storyboard.<br>
+b. We need to map an action to the storyboard.<br>
+c. On tap of this action, we will instantiate the storyboard & navigate to it.<br>
 	
 	UIStoryboard *objUIStoryboard = [UIStoryboard storyboardWithName:@"StoryboardToViewController" bundle:nil];
     
@@ -105,25 +107,25 @@ Steps: <br>
 =========================
 
 Steps:<br>
-	a. For actions to be available in storyboard for a particular view controller, it is important to declare them in the header file.<br>
-	b. Proceed in the same manner as with xib's.<br>
+a. For actions to be available in storyboard for a particular view controller, it is important to declare them in the header file.<br>
+b. Proceed in the same manner as with xib's.<br>
 
 7. Example of manual segue
 ===========================
 
 Steps:<br>
-	a. Segues can also be triggered by code using the following command:<br>
+a. Segues can also be triggered by code using the following command:<br>
 	    
-	    [self performSegueWithIdentifier:@"ManualSegue" sender:nil];
+	```[self performSegueWithIdentifier:@"ManualSegue" sender:nil];
 	    
-	b. It is important to declare the identifier of the segue.<br>
+b. It is important to declare the identifier of the segue.<br>
 
 8. Unwinding segue
 ====================
 
 Steps:<br>
-    a. Unwinding Segue is similar to popping from a navigation controller. We navigate back to a view controller that is in the stack.<br>
-    b. For a view controller to allow other view controller to unwind to it, it needs to implement the following method(method name can be different):<br>
+a. Unwinding Segue is similar to popping from a navigation controller. We navigate back to a view controller that is in the stack.<br>
+b. For a view controller to allow other view controller to unwind to it, it needs to implement the following method(method name can be different):<br>
         
         - (IBAction)unwindToRed:(UIStoryboardSegue *)unwindSegue
 	    {
@@ -131,15 +133,15 @@ Steps:<br>
             NSLog(@"The source view controller from where this unwinding method was called = %@", [unwindSegue destinationViewController]);
         }
         	
-    c. Once this method is implemented, then go to the view controller from which you want to unwind to.
-    d. Ctrl + Drag from the button to the "Exit" icon on top of the view controller, & connect it to the method.
+c. Once this method is implemented, then go to the view controller from which you want to unwind to.
+d. Ctrl + Drag from the button to the "Exit" icon on top of the view controller, & connect it to the method.
 
 	
 9. Stop segue operation
 ========================
 
 Steps:<br>
-	a. Segue operation can be stopped by implementing the following delegate:<br>
+a. Segue operation can be stopped by implementing the following delegate:<br>
 	    
 	    - (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 		{
@@ -147,10 +149,26 @@ Steps:<br>
     		return NO;
 		}
 		
-	b. Depending on the identifier we can also create filters as to which segue we want to perform.<br>
+b. Depending on the identifier we can also create filters as to which segue we want to perform.<br>
 
 10. Custom segue operation
 ===========================
 
 Steps:<br>
-	a. <br>
+a. Create a new storyboard with two view controllers.<br>
+b. Add a custom segue between these two view controllers.<br>
+c. Create a custom segue class(inherits from UIStoryboardSegue class).<br>
+d. In the identity inspector, make the custom segue class of type "CustomSegue" class.<br>
+e. In custom segue class, override the method "perform" to add your own animation.<br>
+
+Note:
+a. In case of Custom Segue Unwinding, it will not work with Navigation Controllers.<br>
+b. To override segues when unwinding(except navigation controller) we need to do override the method:<br>
+    
+    - (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier 
+    {
+    	 //Instantiate a new CustomUnwindSegue
+    	SBCustomUnwindingSegue *segue = [[SBCustomUnwindingSegue alloc] initWithIdentifier:identifier source:fromViewController destination:toViewController];
+    
+    	return segue;
+    }
