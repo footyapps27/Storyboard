@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Xh-Xs-6s1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -73,6 +74,7 @@
                         <viewControllerLayoutGuide type="bottom" id="HHF-rA-Ggw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3Ho-l4-UaC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This view is part of the storyboard." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PJ-55-D0k">
@@ -132,11 +134,11 @@
                                 <exclude reference="cse-d3-o2M"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1Uq-P6-HEL"/>
+                                <exclude reference="wrm-SW-nEY"/>
                                 <exclude reference="D6B-y7-7Hu"/>
                                 <exclude reference="J35-rA-OUi"/>
                                 <exclude reference="sc4-w0-JgZ"/>
-                                <exclude reference="1Uq-P6-HEL"/>
-                                <exclude reference="wrm-SW-nEY"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -145,11 +147,11 @@
                                 <include reference="cse-d3-o2M"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1Uq-P6-HEL"/>
+                                <include reference="wrm-SW-nEY"/>
                                 <include reference="D6B-y7-7Hu"/>
                                 <include reference="J35-rA-OUi"/>
                                 <include reference="sc4-w0-JgZ"/>
-                                <include reference="1Uq-P6-HEL"/>
-                                <include reference="wrm-SW-nEY"/>
                             </mask>
                         </variation>
                     </view>

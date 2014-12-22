@@ -107,12 +107,12 @@
                                             <exclude reference="NdF-TG-gek"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <exclude reference="4Ix-ad-yiV"/>
+                                            <exclude reference="SH6-nm-Ayi"/>
                                             <exclude reference="XGU-Ry-Qrh"/>
                                             <exclude reference="rjm-va-fgY"/>
                                             <exclude reference="IAh-Sw-jG3"/>
                                             <exclude reference="yiJ-2D-Sw6"/>
-                                            <exclude reference="4Ix-ad-yiV"/>
-                                            <exclude reference="SH6-nm-Ayi"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -122,12 +122,12 @@
                                             <include reference="NdF-TG-gek"/>
                                         </mask>
                                         <mask key="constraints">
+                                            <include reference="4Ix-ad-yiV"/>
+                                            <include reference="SH6-nm-Ayi"/>
                                             <include reference="XGU-Ry-Qrh"/>
                                             <include reference="rjm-va-fgY"/>
                                             <include reference="IAh-Sw-jG3"/>
                                             <include reference="yiJ-2D-Sw6"/>
-                                            <include reference="4Ix-ad-yiV"/>
-                                            <include reference="SH6-nm-Ayi"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -145,7 +145,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKx-lZ-K7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85.5" y="277"/>
+            <point key="canvasLocation" x="-78" y="243"/>
         </scene>
     </scenes>
 </document>
